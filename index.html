@@ -1,11 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+
+<article class="card" data-testid="test-profile-card">
+
+  <!-- Avatar -->
+  <figure class="avatar-box">
+    <img 
+      src="img/g.jpeg"
+      alt="Profile photo of CodeWithKanye"
+      data-testid="test-user-avatar"
+    />
+  </figure>
+
+  <!-- Content -->
+  <div class="content">
+
+    <!-- Name -->
+    <h2 data-testid="test-user-name">
+      CodeWithKanye
+    </h2>
+
+    <!-- Bio -->
+    <p data-testid="test-user-bio">
+      Frontend developer passionate about building clean, accessible, and responsive user interfaces.
+    </p>
+
+    <!-- Time -->
+    <p data-testid="test-user-time" id="time" aria-live="polite"></p>
+
+    <!-- Social Links -->
+    <nav>
+      <ul class="socials" data-testid="test-user-social-links">
+        <li>
+          <a href="https://x.com/adekanye_albert" target="_blank" rel="noopener noreferrer"
+            data-testid="test-user-social-twitter">
+            Twitter
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/AlbertAdekanye" target="_blank" rel="noopener noreferrer"
+            data-testid="test-user-social-github">
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a href="https://codewithkanye-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer"
+            data-testid="test-user-social-portfolio">
+            Portfolio
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@codewithkanye" target="_blank" rel="noopener noreferrer"
+            data-testid="test-user-social-youtube">
+            YouTube
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/codewithkanye" target="_blank" rel="noopener noreferrer"
+            data-testid="test-user-social-instagram">
+            Instagram
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Hobbies -->
+    <section>
+      <h4>Hobbies</h4>
+      <ul data-testid="test-user-hobbies" class="list">
+        <li>Coding</li>
+        <li>Gaming</li>
+        <li>Traveling</li>
+      </ul>
+    </section>
+
+    <!-- Dislikes -->
+    <section>
+      <h4>Dislikes</h4>
+      <ul data-testid="test-user-dislikes" class="list">
+        <li>Slow internet</li>
+        <li>Injustice</li>
+
+      </ul>
+    </section>
+
+  </div>
+
+</article>
+
+<script src="script.js"></script>
 </body>
 </html>

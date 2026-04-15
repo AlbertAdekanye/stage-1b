@@ -1,0 +1,120 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #f1f5f9;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* CARD */
+.card {
+  width: 100%;
+  max-width: 700px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* AVATAR */
+.avatar-box {
+  display: flex;
+  justify-content: center;
+}
+
+.avatar-box img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* NAME */
+h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #111827;
+}
+
+/* BIO */
+p {
+  margin: 0;
+  color: #475569;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* TIME */
+#time {
+  font-weight: 600;
+  font-size: 13px;
+  color: #2563eb;
+}
+
+/* SOCIALS */
+.socials {
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.socials a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #2563eb;
+  background: #e0f2fe;
+  padding: 5px 10px;
+  border-radius: 999px;
+}
+
+.socials a:hover {
+  background: #bae6fd;
+}
+
+/* LISTS */
+.list {
+  padding-left: 18px;
+  margin: 5px 0;
+  color: #374151;
+  font-size: 14px;
+}
+
+/* HEADINGS */
+h4 {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: #111827;
+}
+
+/* FOCUS */
+a:focus {
+  outline: 2px solid #2563eb;
+}
+
+/* RESPONSIVE */
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .avatar-box {
+    flex: 1;
+  }
+
+  .content {
+    flex: 2;
+  }
+}
